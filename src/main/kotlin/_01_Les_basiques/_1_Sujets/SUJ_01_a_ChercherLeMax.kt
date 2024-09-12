@@ -17,8 +17,16 @@ import _10_Demos_et_tests.testerEnLot
  */
 fun firstMax(list: List<Int>): List<Int> {
     var iMax = 0
-    // A COMPLETER ICI
+    for ((index, value) in list.withIndex()) {
+        println("the element at $index is $value")
+        //Si la valeur que on est entrain de parcourir est plus grande que la valeur presente a imax dans la liste
+    if(value>list[iMax]){
+        //alors imax prend la valeur de l'indice
+        iMax=index
+    }
+    }
     return  listOf(list[iMax], iMax)
+
 }
 
 /* -------------------
