@@ -1,5 +1,6 @@
 
 
+
 package _01_Les_basiques._1_Sujets
 
 import _10_Demos_et_tests.DataTestIntListInt
@@ -21,7 +22,10 @@ import _10_Demos_et_tests.testerEnLot
  */
 
 fun findFirstValue(value: Number, list: List<Number>): Int {
-    // A COMPLETER ICI
+   for (i in list.indices)
+       if (list[i]==value ){
+           return i
+       }
     return -1
 }
 
