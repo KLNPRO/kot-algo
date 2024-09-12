@@ -18,12 +18,42 @@ import _10_Demos_et_tests.*
 fun rechercheDichotomique(cible: Int, list: List<Int>): Int {
     for (i in list.indices)
         if(list [i]== cible)
-            return i
+            return i 
 
 
     // Absence de la valeur dans la liste :
     return -1
 }
+/*
+déclarations
+début, fin, val, mil, N : Entiers
+t : Tableau [0..N] d'entiers classé
+trouvé : Booléen
+
+//initialisation
+N = taille(t)-1
+début ← 0
+fin ← N
+trouvé ← faux
+Saisir val
+
+//Boucle de recherche
+// La condition début inférieur ou égal à fin permet d'éviter de faire
+// une boucle infinie si 'val' n'existe pas dans le tableau.
+Tant que trouvé != vrai et début <= fin:
+mil ← partie entière((début + fin)/2)
+si t[mil] == val:
+        trouvé ← vrai
+sinon:
+si val > t[mil]:
+début ← mil+1
+sinon:
+fin ← mil-1
+//Affichage du résultat
+Si trouvé == vrai:
+Afficher "La valeur ", val , " est au rang ", mil
+Sinon:
+Afficher "La valeur ", val , " n'est pas dans le tableau"*/
 
 /* -------------------
     Données de test
